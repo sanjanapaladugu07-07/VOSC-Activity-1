@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | VOSC Activity 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <p class="tag">VOSC ACTIVITY 1</p>
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">A classic game for two players</p>
+
+        <div class="scoreboard">
+            <div class="score active" id="x-score">
+                <span>Player X</span>
+                <strong id="x-wins">0</strong>
+            </div>
+            <div class="score" id="o-score">
+                <span>Player O</span>
+                <strong id="o-wins">0</strong>
+            </div>
+        </div>
+
+        <p id="status" aria-live="polite">Player X's turn</p>
+
+        <div class="board" id="board" role="group"
+             aria-label="Tic-Tac-Toe board">
+            <button class="cell" data-index="0" aria-label="Cell 1"></button>
+            <button class="cell" data-index="1" aria-label="Cell 2"></button>
+            <button class="cell" data-index="2" aria-label="Cell 3"></button>
+            <button class="cell" data-index="3" aria-label="Cell 4"></button>
+            <button class="cell" data-index="4" aria-label="Cell 5"></button>
+            <button class="cell" data-index="5" aria-label="Cell 6"></button>
+            <button class="cell" data-index="6" aria-label="Cell 7"></button>
+            <button class="cell" data-index="7" aria-label="Cell 8"></button>
+            <button class="cell" data-index="8" aria-label="Cell 9"></button>
+        </div>
+
+        <div class="buttons">
+            <button id="restart">Restart Round</button>
+            <button id="reset-score">Reset Scores</button>
+        </div>
+
+        <p class="footer">Made with HTML, CSS &amp; JavaScript</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
